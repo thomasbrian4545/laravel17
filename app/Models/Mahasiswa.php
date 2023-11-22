@@ -12,6 +12,6 @@ class Mahasiswa extends Model
 
     public function matakuliahs(): BelongsToMany
     {
-        return $this->belongsToMany('App\Models\Matakuliah');
+        return $this->belongsToMany('App\Models\Matakuliah')->withTimestamps();
     }
 }
